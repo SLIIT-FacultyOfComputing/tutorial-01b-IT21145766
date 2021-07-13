@@ -6,6 +6,30 @@ Do not change the code given in the main() function when you are implementing yo
 
 #include <stdio.h>
 
+int minimum(n1, n2){
+  if(n1 < n2){
+    return n1;
+  }else if(n2 < n1){
+    return n2;
+  }else{
+    return n1; //As both are equal
+  }
+}
+
+int maximum(n1, n2){
+  if(n1 < n2){
+    return n2;
+  }else if(n2 < n1){
+    return n1;
+  }else{
+    return n1; //As both are equal
+  }
+}
+
+int multiply(n1, n2){
+  return n1 * n2;
+}
+
 int main() {
    int no1, no2;
    printf("Enter a value for no 1 : ");
